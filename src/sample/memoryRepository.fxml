@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pane2" prefHeight="530.0" prefWidth="741.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.ControllerMemoryRepository">
+  <children>
+    <Button fx:id="addButton" alignment="CENTER" layoutX="200.0" layoutY="422.0" mnemonicParsing="false" onAction="#addMitarbeiter" prefHeight="35.0" prefWidth="157.0" text="Add" />
+    <Button fx:id="displayButton" layoutX="11.0" layoutY="422.0" mnemonicParsing="false" onAction="#showAll" prefHeight="35.0" prefWidth="136.0" styleClass="null" text="Display">
+      <stylesheets>
+        <URL value="@custom.css" />
+      </stylesheets>
+    </Button>
+    <TextField fx:id="id" layoutX="14.0" layoutY="288.0" prefWidth="84.00009999999747" promptText="Enter ID" />
+    <TextField fx:id="vorname" layoutX="114.0" layoutY="288.0" prefWidth="136.0" promptText="Enter First Name" />
+    <TextField fx:id="nachname" layoutX="260.0" layoutY="288.0" prefWidth="149.0" promptText="Enter Last Name" />
+    <TextField fx:id="adresse" layoutX="422.0" layoutY="288.0" prefWidth="191.0" promptText="Enter Adress" />
+    <TextField fx:id="niveau" layoutX="221.0" layoutY="320.0" prefWidth="105.0" promptText="Enter Niveau" />
+    <TextField fx:id="lohn" layoutX="334.0" layoutY="320.0" prefWidth="136.0" promptText="Enter Salary/Hour" />
+    <TextField fx:id="stunden" layoutX="479.0" layoutY="320.0" prefWidth="136.0" promptText="Enter Hours/Day" />
+    <Label fx:id="message" layoutX="14.0" layoutY="362.0" prefHeight="48.0" prefWidth="599.0" wrapText="true" />
+    <Button fx:id="backButton" layoutX="591.0" layoutY="465.0" mnemonicParsing="false" onAction="#closeWindow" prefHeight="35.0" prefWidth="136.0" text="Back">
+      <tooltip>
+        <Tooltip text="Back To Start Window" />
+      </tooltip>
+    </Button>
+    <Button fx:id="deleteButton" layoutX="591.0" layoutY="422.0" mnemonicParsing="false" onAction="#removeMiarbeiter" prefHeight="35.0" prefWidth="136.0" text="Delete" />
+    <TableView fx:id="tableMitarbeiter" layoutX="14.0" layoutY="14.0" prefHeight="251.0" prefWidth="713.0">
+      <columns>
+        <TableColumn prefWidth="47.0" style="&#10;" text="ID" fx:id="idColumn" />
+        <TableColumn prefWidth="102.0" text="Vorname" fx:id="vornameColumn" />
+        <TableColumn prefWidth="105.0" text="Nachname" fx:id="nachnameColumn" />
+        <TableColumn prefWidth="150.0" text="Adresse" fx:id="adresseColumn" />
+        <TableColumn prefWidth="110.0" text="Position" fx:id="positionColumn" />
+        <TableColumn minWidth="0.0" text="Niveau" fx:id="niveauColumn" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="50.0" text="Lohn" fx:id="lohnColumn" />
+        <TableColumn prefWidth="68.0" text="Stunden" fx:id="stundenColumn" />
+      </columns>
+    </TableView>
+    <Button fx:id="updateButton" layoutX="390.0" layoutY="422.0" mnemonicParsing="false" onAction="#updateMitarbeiter" prefHeight="35.0" prefWidth="157.0" text="Update" />
+    <Button fx:id="clearButton" layoutX="621.0" layoutY="301.0" mnemonicParsing="false" onAction="#clearTextField" prefHeight="35.0" prefWidth="105.0" text="Clear" />
+    <ChoiceBox fx:id="berufPositionChoiceBox" layoutX="14.0" layoutY="320.0" prefWidth="200.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="ENTWICKLER" />
+          <String fx:value="TESTER" />
+          <String fx:value="PROJEKTMANAGER" />
+          <String fx:value="TEAMLEADER" />
+        </FXCollections>
+      </items>
+      <tooltip>
+        <Tooltip text="Choose Work Position" />
+      </tooltip>
+    </ChoiceBox>
+    <Button fx:id="salaryButton" layoutX="11.0" layoutY="465.0" mnemonicParsing="false" onAction="#kalkuliereLohn" prefHeight="35.0" prefWidth="136.0" text="Salary" />
+    <Button fx:id="salaryByPositionButton" layoutX="200.0" layoutY="465.0" mnemonicParsing="false" onAction="#kalkuliereLohnBerufsPosition" prefHeight="35.0" prefWidth="157.0" text="Salaries By Position" />
+    <Button fx:id="salaryByNiveauButton" layoutX="392.0" layoutY="465.0" mnemonicParsing="false" onAction="#kalkuliereLohnNiveau" prefHeight="35.0" prefWidth="156.99990000000253" text="Salaries By Niveau" />
+  </children>
+  <stylesheets>
+    <URL value="@custom.css" />
+  </stylesheets>
+</AnchorPane>

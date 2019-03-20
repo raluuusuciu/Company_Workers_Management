@@ -1,0 +1,4 @@
+1,raluca,suciu,Fabricii de Zahar,PROJEKTMANAGER,8,20.0,8,
+2,tudor,suciu,Fabricii de Zahar,TESTER,5,5.0,4,
+3,adrian,lupea,Zaharia Carcalechi,ENTWICKLER,6,10.0,8,
+4,dorel,oprea,Actorului,TESTER,7,15.0,8,

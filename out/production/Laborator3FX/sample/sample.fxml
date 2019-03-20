@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pane1" minHeight="313.0" prefHeight="401.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
+  <children>
+    <RadioButton fx:id="fileRepo" layoutX="101.0" layoutY="221.0" mnemonicParsing="false" onAction="#setImageFile" prefHeight="37.999900000002526" prefWidth="128.0" text="FileRepository" />
+    <RadioButton fx:id="memoryRepo" layoutX="372.0" layoutY="221.0" mnemonicParsing="false" onAction="#setImageMemory" prefHeight="32.0" prefWidth="159.0" text="MemoryRepository" />
+    <Button fx:id="chooseButton" layoutX="227.0" layoutY="272.0" mnemonicParsing="false" onAction="#repoMode" prefHeight="50.0" prefWidth="143.0" text="Choose" textAlignment="CENTER" underline="false" />
+    <Label fx:id="image" contentDisplay="CENTER" graphicTextGap="10.0" layoutX="193.0" layoutY="118.0" prefHeight="90.0" prefWidth="210.0" />
+    <Label fx:id="startText" alignment="CENTER" layoutX="110.0" layoutY="39.0" prefHeight="50.0" prefWidth="380.0" text="CHOOSE AN OPTION" />
+  </children>
+  <stylesheets>
+    <URL value="@custom.css" />
+  </stylesheets>
+</AnchorPane>

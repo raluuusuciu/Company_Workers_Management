@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="536.0" prefWidth="721.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.FileRepository">
+  <children>
+    <TableView fx:id="tableMitarbeiter" layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="662.0">
+      <columns>
+        <TableColumn prefWidth="46.0" text="ID" fx:id="idColumn" />
+        <TableColumn prefWidth="98.0" text="First Name" fx:id="vornameColumn" />
+        <TableColumn prefWidth="91.0" text="Last Name" fx:id="nachnameColumn" />
+        <TableColumn prefWidth="100.0" text="Adresse" fx:id="adresseColumn" />
+        <TableColumn prefWidth="101.0" text="Position" fx:id="positionColumn" />
+        <TableColumn prefWidth="75.0" text="Niveau" fx:id="niveauColumn" />
+        <TableColumn prefWidth="75.0" text="Salary" fx:id="lohnColumn" />
+        <TableColumn prefWidth="75.0" text="Hours" fx:id="stundenColumn" />
+      </columns>
+    </TableView>
+    <TextField fx:id="id" layoutX="14.0" layoutY="231.0" prefWidth="200.0" promptText="Enter ID" />
+    <TextField fx:id="vorname" layoutX="14.0" layoutY="268.0" prefWidth="200.0" promptText="Enter First Name" />
+    <TextField fx:id="nachname" layoutX="14.0" layoutY="302.0" prefWidth="200.0" promptText="Enter Last Name" />
+    <TextField fx:id="adresse" layoutX="14.0" layoutY="334.0" prefWidth="200.0" promptText="Enter Adress" />
+    <TextField fx:id="niveau" layoutX="236.0" layoutY="244.0" prefWidth="200.0" promptText="Enter Niveau" />
+    <TextField fx:id="lohn" layoutX="236.0" layoutY="289.0" prefWidth="200.0" promptText="Enter Salary/Hour" />
+    <TextField fx:id="stunden" layoutX="236.0" layoutY="328.0" prefWidth="200.0" promptText="Enter Hours/Day" />
+    <Button fx:id="clearButton" onAction="#clearTextFied" layoutX="274.0" layoutY="366.0" mnemonicParsing="false" text="Clear" />
+    <Button fx:id="viewButton" onAction="#showAll" layoutX="483.0" layoutY="231.0" mnemonicParsing="false" prefWidth="75.0" text="View" />
+    <Button fx:id="salaryButton" onAction="#kalkuliereLohn" layoutX="610.0" layoutY="327.0" mnemonicParsing="false" text="Salary" />
+    <Button fx:id="addButton" layoutX="483.0" layoutY="262.0" mnemonicParsing="false" onAction="#addMitarbeiter" prefWidth="75.0" text="Add" />
+    <Button fx:id="updateButton" onAction="#updateMitarbeiter" layoutX="483.0" layoutY="294.0" mnemonicParsing="false" text="Update" />
+    <Button fx:id="deleteButton" onAction="#removeMitarbeiter" layoutX="481.0" layoutY="327.0" mnemonicParsing="false" prefWidth="77.0" text="Delete" />
+    <Button fx:id="salaryPositionButton" onAction="#kalkuliereLohnBerufsPosition" layoutX="557.0" layoutY="360.0" mnemonicParsing="false" text="SalaryPosition" />
+    <Button fx:id="salaryNiveauButton" onAction="#kalkuliereLohnNiveau" layoutX="557.0" layoutY="393.0" mnemonicParsing="false" prefWidth="119.0" text="SalaryNiveau" />
+    <Button fx:id="closeButton" onAction="#closeWindow" layoutX="14.0" layoutY="495.0" mnemonicParsing="false" text="Back" />
+    <Label fx:id="message" layoutX="14.0" layoutY="420.0" prefHeight="60.0" prefWidth="422.0" text="" />
+    <ChoiceBox fx:id="berufPositionChoiceBox" layoutX="14.0" layoutY="367.0" prefWidth="200.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="TESTER" />
+          <String fx:value="PROJEKTMANAGER" />
+          <String fx:value="TEAMLEADER" />
+          <String fx:value="ENTWICKLER" />
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+  </children>
+</AnchorPane>

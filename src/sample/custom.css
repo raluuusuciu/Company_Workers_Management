@@ -1,0 +1,264 @@
+#pane1{
+    -fx-background-color: gainsboro;
+}
+
+#pane2{
+    -fx-background-color: gainsboro;
+}
+
+#startText{
+-fx-font-size: 32px;
+   -fx-font-family: "Arial Black";
+   -fx-text-fill: #696969;
+   -fx-effect: innershadow( three-pass-box , rgba(0, 0, 0, 0.7), 6, 0.0, 0, 2);
+}
+
+#chooseButton{
+-fx-font-size: 15px;
+   -fx-font-family: "Arial Black";
+   -fx-text-fill: #000000;
+   -fx-background-color: linear-gradient(#f0f8ff, #a9a9a9);
+   -fx-effect: dropshadow( three-pass-box , rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+}
+
+#chooseButton:hover {
+    -fx-background-color: linear-gradient(#a9a9a9, #f0f8ff);
+}
+
+#addButton{
+-fx-font-size: 15px;
+   -fx-font-family: "Arial";
+   -fx-text-fill: #000000;
+   -fx-background-color: linear-gradient(#f0f8ff, #a9a9a9);
+   -fx-effect: dropshadow( three-pass-box , rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+
+}
+
+#addButton:hover {
+    -fx-background-color: linear-gradient(#a9a9a9, #f0f8ff);
+}
+
+#displayButton{
+-fx-font-size: 15px;
+   -fx-font-family: "Arial";
+   -fx-text-fill: #000000;
+   -fx-background-color: linear-gradient(#f0f8ff, #a9a9a9);
+   -fx-effect: dropshadow( three-pass-box , rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+
+}
+
+#displayButton:hover {
+    -fx-background-color: linear-gradient(#a9a9a9, #f0f8ff);
+}
+
+#deleteButton{
+-fx-font-size: 15px;
+   -fx-font-family: "Arial";
+   -fx-text-fill: #000000;
+   -fx-background-color: linear-gradient(#f0f8ff, #a9a9a9);
+   -fx-effect: dropshadow( three-pass-box , rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+
+}
+
+#deleteButton:hover {
+    -fx-background-color: linear-gradient(#a9a9a9, #f0f8ff);
+}
+
+#updateButton{
+-fx-font-size: 15px;
+   -fx-font-family: "Arial";
+   -fx-text-fill: #000000;
+   -fx-background-color: linear-gradient(#f0f8ff, #a9a9a9);
+   -fx-effect: dropshadow( three-pass-box , rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+
+}
+
+#updateButton:hover {
+    -fx-background-color: linear-gradient(#a9a9a9, #f0f8ff);
+}
+
+#salaryButton{
+-fx-font-size: 15px;
+   -fx-font-family: "Arial";
+   -fx-text-fill: #000000;
+   -fx-background-color: linear-gradient(#f0f8ff, #a9a9a9);
+   -fx-effect: dropshadow( three-pass-box , rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+}
+
+#salaryButton:hover {
+    -fx-background-color: linear-gradient(#a9a9a9, #f0f8ff);
+}
+
+#backButton{
+-fx-font-size: 15px;
+   -fx-font-family: "Arial";
+   -fx-text-fill: #000000;
+   -fx-background-color: linear-gradient(#f0f8ff, #a9a9a9);
+   -fx-effect: dropshadow( three-pass-box , rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+
+}
+
+#backButton:hover {
+    -fx-background-color: linear-gradient(#a9a9a9, #f0f8ff);
+}
+
+#salaryByPositionButton{
+-fx-font-size: 15px;
+   -fx-font-family: "Arial";
+   -fx-text-fill: #000000;
+   -fx-background-color: linear-gradient(#f0f8ff, #a9a9a9);
+   -fx-effect: dropshadow( three-pass-box , rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+
+}
+
+#salaryByPositionButton:hover {
+    -fx-background-color: linear-gradient(#a9a9a9, #f0f8ff);
+}
+
+#salaryByNiveauButton{
+-fx-font-size: 15px;
+   -fx-font-family: "Arial";
+   -fx-text-fill: #000000;
+   -fx-background-color: linear-gradient(#f0f8ff, #a9a9a9);
+   -fx-effect: dropshadow( three-pass-box , rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+
+}
+
+#salaryByNiveauButton:hover {
+    -fx-background-color: linear-gradient(#a9a9a9, #f0f8ff);
+}
+
+#clearButton{
+-fx-font-size: 15px;
+   -fx-font-family: "Arial";
+   -fx-text-fill: #000000;
+   -fx-background-color: linear-gradient(#f0f8ff, #a9a9a9);
+   -fx-effect: innershadow( three-pass-box , rgba(0, 0, 0, 0.7), 6, 0.0, 0, 2);
+
+}
+
+#clearButton:hover {
+    -fx-background-color: linear-gradient(#a9a9a9, #f0f8ff);
+}
+
+#adresse {
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+}
+#adresse:focused {
+    -fx-background-color: -fx-focus-color, -fx-background ;
+}
+
+#id {
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+}
+#id:focused {
+    -fx-background-color: -fx-focus-color, -fx-background ;
+}
+
+#vorname {
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+}
+#vorname:focused {
+    -fx-background-color: -fx-focus-color, -fx-background ;
+}
+
+#nachname {
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+}
+#nachname:focused {
+    -fx-background-color: -fx-focus-color, -fx-background ;
+}
+
+#niveau {
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+}
+#niveau:focused {
+    -fx-background-color: -fx-focus-color, -fx-background ;
+}
+
+#lohn {
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+}
+#lohn:focused {
+    -fx-background-color: -fx-focus-color, -fx-background ;
+}
+
+#stunden {
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+}
+#stunden:focused {
+    -fx-background-color: -fx-focus-color, -fx-background ;
+}
+
+#berufPositionChoiceBox {
+  -fx-background-color: #a9a9a9;
+  -fx-mark-color: #c0c0c0;
+}
+
+#berufPositionChoiceBox .context-menu{
+    -fx-background-color: #a9a9a9;
+}
+
+#berufPositionChoiceBox .menu-item:focused {
+    -fx-background-color: #c0c0c0;
+}
+
+#berufPositionChoiceBox .menu-item > .label {
+    -fx-text-fill: #000000;
+}
+
+#berufPositionChoiceBox .menu-item:focused > .label {
+    -fx-text-fill: #a9a9a9;
+}
+
+#berufPositionChoiceBox > .label {
+    -fx-text-fill: #000000;
+}
+
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler {
+    -fx-stroke: transparent;
+    -fx-size:50px;
+    -fx-alignment: CENTER ;
+    -fx-text-alignment: center;
+
+}
+.table-row-cell:filled:hover {
+
+    -fx-size:50px;
+    -fx-alignment: CENTER;
+    -fx-text-alignment: center;
+
+
+}
+.table-view:row-selection {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-fixed-cell-size: 50px;
+    -fx-alignment: CENTER;
+    -fx-text-alignment: center;
+
+}
+
+.table-view .table-column{
+    -fx-text-alignment: center;
+    -fx-alignment: CENTER
+
+}
+
+
